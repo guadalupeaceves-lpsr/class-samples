@@ -1,0 +1,22 @@
+
+print("What is the hour in New York?")
+NewYorkHours = raw_input(1)
+NewYorkMinutes = raw_input(2)
+
+if NewYorkHours <= 3:
+	CaliforniaHours = NewYorkHours + 9
+
+if NewYorkHours > 1:
+	print("Oops! The number that you have just put in does not work. Try again.")
+	
+
+if NewYorkHours > 12:
+
+	print("Oops! The number that you have just put in does not work. Try again.")
+
+
+if NewYorkHours >= 4:
+	CaliforniaHours = NewYorkHours - 1
+
+
+

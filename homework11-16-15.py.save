@@ -1,0 +1,15 @@
+# This will print, "These are the ingers in my a cappella group:"
+print("These are the singers in my a cappella group:")
+# This will assign acappellasingersingroup to the items or words
+# 'Sasha','Kristen','Sam','Rebecca','Sean','Teddy','Tom', which
+# means that acappellasingersingroup will be a list variable.
+acappellasingersingroup = ['Sasha', 'Kristin', 'Sam', 'Rebecca', 'Sean', 'Teddy', 'Tom']
+# This will sort the                                       
+acappellasingersingroup.sort()
+x = 1
+
+for current_acappellasingersingroup in acappellasingersingroup:
+	x = str(x)
+	print(x + "." + current_acappellasingersingroup)
+	x = int(x)
+	x = x + 1

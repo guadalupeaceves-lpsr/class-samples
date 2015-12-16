@@ -1,0 +1,31 @@
+
+# I first made a list of all the names of my family and friends, and I
+# assigned it to friendsandfamilymembers, making it a list variable.
+friendsandfamilynames = ["Brenda","Kimberly","Jennifer","Armando","Alicia","Mariana","Angy","Lidia","Elizabeth","Nancy"]
+# I assigned il to the value of 0, which makes it into an integer variable. This comes in handy later.
+il = 0
+# I made the list assigned to friendsandfamilynames get sorted, which just means that 
+# the names will now be in an alphabetical order, which would make the list alphabetical.
+# So, "Alicia, Armando, Angy, Brenda, Elizabeth, Jennifer, Kimberly, Lidia, Mariana, Nancy."
+friendsandfamilynames.sort()
+# This would make the list assigned to friendsandfamilynames be
+# now in reverse, so "Nancy, Mariana, Lidia, Kimberly, Jennifer, Elizabeth, Brenda, Angy, Armando, Alicia." 
+friendsandfamilynames.reverse()
+# This will print,"These are the 5 friends and family members that I spend the most time with:"
+# "                                                                                           "
+print("These are the 5 friends and family members that I spend the most time with:")
+print(" ")
+
+# This is going to make a variable called current_name. Whatever it has been set to                                
+# will be how many words there are on the list of the variable friendsandfamilynames.
+for current_name in friendsandfamilynames:
+# This will make a variable called il, which will be 1 plus the past value of the variable il, which will change
+# depending on how many words there were on the list. So, the value of il here will be 1, then 2,  
+# then 3, etc.
+        il= 1 + il
+# This is assigning current_name to the string version of its past self.
+        current_name = str(current_name)
+# The first time, this will print, "1. Nancy"
+# It will continue to do so but with different il and current_name values.
+        print(str(il) + ". " + str(current_name))
+

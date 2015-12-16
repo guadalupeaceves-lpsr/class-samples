@@ -1,0 +1,79 @@
+# all of these will be 
+# make a strength variable only able to be set from 1-10
+# make a health variable only able to be set from 1 to 10
+# make a luck variable only able to be set from 1 to 10
+# if total number is more than 15,
+# then automatically set all of this each to 5
+import random
+print("Welcome to Guadalupe's Quest!")
+print("Enter the name of your character:")
+userplayer_name = raw_input()
+print("Rules-")
+print("You are now about to set your characters stats.")
+print("You will set your character's:")
+print("Strength")
+print("Health")
+print(", and Luck.")
+print("You will only be able to use 15 points in total.")
+print("So, let's say that you want a health of 10, luck of 1, and strength of 2, it is possible.")
+print("The numbers that you set your stats to be should not be over 15.")
+print("Enter strength (1-10):")
+userplayer_strength_number = int(raw_input())
+print("Enter health(1-10):")
+userplayer_health_number = int(raw_input())
+print("Enter luck(1-10):")
+userplayer_luck_number = int(raw_input())
+random_luck_number = random.randint(1,10)
+# if  total number given by themselves is more than 15,
+# then just report back the user's name, strength, 
+#health and luck
+# do the same for all of the else
+if userplayer_strength_number + userplayer_health_number + userplayer_luck_number > 15:
+	print("You have given your character too many points!")
+	userplayer_luck_number = str(5)
+	userplayer_strength_number = str(5)
+	userplayer_health_number = str(5)
+	print("Default values have been assigned, " + userplayer_name + ":")
+	print("strength:" + userplayer_strength_number + ", " + "health: " + userplayer_health_number+ ", luck: " + userplayer_luck_number)  
+else :
+	userplayer_luck_number = str(userplayer_luck_number)
+	userplayer_strength_number = str(userplayer_strength_number)
+	userplayer_health_number = str(userplayer_health_number)
+	print(userplayer_name + ":")
+	print("strength: " + userplayer_strength_number + ", " + "health: " + userplayer_health_number+ ", luck: " + userplayer_luck_number)
+
+
+print(userplayer_name + ", you've come to a fork in the road. Do you want to go right or left? Enter 'right' or 'left'.")
+userplayer_decision_to_fork_in_road = raw_input()
+
+
+if userplayer_decision_to_fork_in_road == 'left': 
+	print("You have come across a pebble. Do you take it?")
+	print("Write 'yes' or 'no'.")
+	userplayer_take_or_not_pebble = raw_input()
+	if userplayer_take_or_not_pebble == 'no':
+		print("Well, you lost because you came across a zombie and could not defend yourself.")
+	if userplayer_take_or_not_pebble == 'yes':
+		print("You came across a zombie, and were able to defend yourself. You won!")
+
+
+if userplayer_decision_to_fork_in_road == 'right' and userplayer_health_number > 6:
+	print("You saw a troll walking underneath a bridge. You try to cross quietly but your strength makes a loud noise.")
+	print("You then decided to take it out.")
+	print("There was a little problem.")
+	print("The troll turned into a giant, and tried to squash you.")
+	print("With your strength and health, you were able to beat the giant.")
+	print("You won!")
+elif userplayer_decision_to_fork_in_road == 'right' and userplayer_health_number == 3 and userplayer_strength_number == 5:
+	print("You saw a troll walking underneath a bridge. You decided to cross quietly, but your strength made a noise.")
+	print("You then decided to take it out.")
+	print("There was a little problem.")
+	print("The troll turned into a giant, and tried to squash you.")
+	print("You remember that you have little strength, but you decide to fight anyways.")
+	print("You won the game!")
+elif random_luck_number == '6' or random_luck_number == '4':
+		print("You won the game!")
+elif userplayer_decision_to_fork_in_road == 'right' and userplayer_health_number == 2 and userplayer_strength_number <2:
+	print("A bug flew from the top of a jungle and bit your neck. You turned into a bug. Though you became a superhero, you still lost the game.")
+else:
+		print("You lost the game because Lady Gaga came in with raw-raw power, and killed you before you could do anything else. ")

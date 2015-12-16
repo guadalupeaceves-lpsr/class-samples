@@ -1,0 +1,13 @@
+import sys
+print("Welcome to PumaPix!")
+print("Enter your 5 favorite shows.")
+x = 0
+shows_list = []
+
+while x > 4:
+        print("Enter a show name:")
+        show_name = raw_input()
+        show_name = [show_name]
+	show_name = show_name + show
+        x = x + 1
+
