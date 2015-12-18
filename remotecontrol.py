@@ -9,14 +9,12 @@ frame = Frame(root)
 # create our turtle
 shawn = turtle.Turtle()
 def regular_triangle(myTurtle):
-	myTurtle.penup()
 	numberoftimesloop = 3
+	randside = random.randint(15, 50)
 	while numberoftimesloop > 0:
 		myTurtle.pendown()
 		myTurtle.forward(randside)
 		myTurtle.left(120)	
-
-randside = random.randint(15, 50)	
 
 # make some simple buttons
 
@@ -29,8 +27,8 @@ exitonclick = Button(frame, text="exit", command=quit)
 regtriangle = Button(frame, text='triangle', command=lambda: regular_triangle(shawn))
 
 # put it all together
-regtriangle.pack(side=LEFT)
-exitonclick.pack(side=LEFT)
+regtriangle.pack(side=RIGHT)
+exitonclick.pack(side=RIGHT)
 fwd.pack(side=LEFT)
 left.pack(side=LEFT)
 right.pack(side=LEFT)
