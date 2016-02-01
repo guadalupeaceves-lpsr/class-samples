@@ -3,23 +3,25 @@ user_decision_continue = 'yes'
 
 # This is allowing certain variables(information) to be accessed in an easier way.
 class Player(object):
-	def __init__(self, name, age, games, goals):
+	def __init__(self, name, age, games, goals, list):
 		self.name = name
 		self.age = age
 		self.games = games
-		self.goals = goals	
+		self.goals = goals
+		self.list = list	
 # this will add a player to the list
-	def AddPlayers(self):
-		myListOfPlayers = myListOfPlayers + list
-
-# this will print the list of players
+	def AddPlayers(self, list):
+		list.append(self.name)
+		list.append(self.age)
+		list.append(self.games)
+		list.append(self.goals)
+		
 	def PrintWholePlayers(self, list):
+# this will print the list 
 		print(" ")
 		for current_information in list:
-			number = 0
-			print(current_information)		
+			print(current_information)
 			print(" ")
-
 # this will print specific player by asking the user for the player's name.
 # this will ask the user if they want to access the team player's list
 # this is creating a list
@@ -34,9 +36,11 @@ while user_decision_continue == "yes":
 	print("Hello. You are about to access this soccer team's player list.")
 	print("Do you want to access it? Type 'yes' to access it, and 'no' to not access the list.")
 	user_decision_continue = str(raw_input())
+	print(" ")
 	print("Do you want to add a player to the list, or do you want to print the list?")
 	print("Type 'add' to add a player, and 'print' to print the list.")
 	user_add_or_print = str(raw_input())
+	print(" ")
 # this is asking the user if he/she wants to add a player to the list.
 	if user_add_or_print == 'add':
 		print(" ")
@@ -45,14 +49,15 @@ while user_decision_continue == "yes":
 # this is asking the user for the info to add to the list
 		print(" ")
 		print("What is the player's name?")
-		user_name = str(raw_input())
+		user_name = "Name: " + str(raw_input())
 		print("What is the player's age?")
-		user_age = str(raw_input())
+		user_age = "Age: " + str(raw_input())
 		print("What is the number of games the player has been in? If none, then write '0'.")
-		user_games = str(raw_input())
+		user_games = "Games: " + str(raw_input())
 		print("What is the number of goals that the player has made? If none, then write '0'.")	
-		user_goals = str(raw_input())
-		myPlayer = myPlayersList.append(Player(user_name, user_age, user_games, user_goals))
+		user_goals = "Goals: " + str(raw_input())
+		myPlayer = Player(user_name, user_age, user_games, user_goals, myPlayersList)
+		myPlayer.AddPlayers(myPlayersList)
 # this is saying that if the user has not decided to add a player, then it won't.
 # this is asking the user if he/she wants to print the list of players.
 	if user_add_or_print == 'print':
@@ -63,7 +68,7 @@ while user_decision_continue == "yes":
 		print("Do you want to view all of the players? Type 'all' or nothing.")
 		user_decision_printing = str(raw_input())
 		if user_decision_printing == 'all':
-			self.PrintWholePlayers(myPlayersList)		
+			myPlayer.PrintWholePlayers(myPlayersList)		
 	print(" ")
 	print(" Do you want to continue to do this? Type 'yes' or 'no'.")
 	user_decision_continue = str(raw_input())
