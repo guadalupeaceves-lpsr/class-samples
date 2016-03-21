@@ -32,7 +32,7 @@ class Numbers(object):
 					
 PrimeList = []
 # this is creating a variable with the numbers 2 to 100,000
-numbersVariable = range(2,1001)
+numbersVariable = range(2,100001)
 # x will change to the number currently in the range of the variable numbersVariable
 # this is saying that if there is still a number in the variable numberVariable, its range, then it will continue its loop
 for x in numbersVariable:
