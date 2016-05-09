@@ -1,0 +1,67 @@
+#picofcreepyfamily{
+	position:relative;
+	margin-top:28px;
+	height:200px;
+	width:576px;
+}
+* {
+	background-color:#305C6F;
+}	
+
+img{
+	border-style:outset;
+	border-color:#666666;
+}
+#imgoftheabyss{
+	position:relative;
+	float:left;
+	height:200px;
+	width:200px;
+	margin-top:27px;	
+	margin-left:-107px;
+}
+
+#cutedogimg{
+	height:160px;
+	width:180px;
+	position:relative;
+}
+
+#afraidmanimg{
+	height:200px;
+	width:100px;
+	position:relative;
+	float:left;
+	margin-top:-178px;
+}
+
+#worriedpeopleimg{
+	height:200px;
+	width:200px;
+	float:right;
+	margin-top:27px;
+}
+#afraidladyimg{
+	height:200px;
+	width:100px;
+	position:relative;
+	margin-top:-178px;
+	float:right;
+	margin-right:-204px;
+}
+div p, h1, h6{
+	text-align:center;
+	position:static;
+	margin-top:-110px;
+	padding:0px 210px 99px 210px;
+	border:0px;
+}
+#scarydogimg{
+	position:relative;
+	margin-top:-343px;
+	float:right;	
+	height:160px;
+	width:185px;
+}
+
+
