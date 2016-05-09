@@ -1,0 +1,24 @@
+*{
+	background-color:purple;
+}
+
+img {
+	position:relative;
+	float:left;
+	margin-top:-90px;
+}
+
+p{
+	position:relative;
+	text-color:#800080;
+	family-font:Tahoma;
+	text-align:center;
+	margin-top:15px;
+	text-decoration:blink;
+}
+p:nth-child(2){
+	text-color:#ffe6e6;
+	family-font:Arial;
+	text-align:center;
+	margin-top:50px;
+}
