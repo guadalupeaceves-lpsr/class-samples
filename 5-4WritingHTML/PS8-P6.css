@@ -1,24 +1,67 @@
-*{
-	background-color:purple;
+ *{
+	background-color:#ae5cc8;
 }
 
-img {
+#logo{
 	position:relative;
 	float:left;
-	margin-top:-90px;
+	margin-top:-15px;
+	width:90px;
+	height:80px;
+	padding:5px 5px 15px 5px;
+	border:10px 10px 20px 10px;
+	border-color:#f5f5dc;
+	border-style:double;
+	background-color:;
+}
+
+#principal{
+	position:relative;
+	float:right;
+	margin-top:-15px;
+	width:60px;
+	height:80px;
+	padding:5px 5px 15px 5px;
+	border:10px 10px 20px 10px;
+	border-style:double;
+	border-color:#f5f5dc;
+	background-color:;
 }
 
 p{
 	position:relative;
 	text-color:#800080;
-	family-font:Tahoma;
+	border:10px 10px 20px 10px;
+	padding:5px 5px 15px 5px;
+	margin-top:115px;
+	border-color:purple;
 	text-align:center;
-	margin-top:15px;
-	text-decoration:blink;
+	background-color:;
+	border-style:solid;
+	border-width:25px 10px 25px 10px;
+	padding:0px -110px 0px -120px;
+	font-family:Whitney SSm A, Tahoma, Parisish, Holiday Font, Helvetica, sans-serif;
 }
-p:nth-child(2){
-	text-color:#ffe6e6;
-	family-font:Arial;
-	text-align:center;
-	margin-top:50px;
+
+#ourvbteam{
+	display:block;
+	position:relative;
+	height:80px;
+	width:130px;
+	margin-top:-219px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.teams{
+	position:relative;
+	height:50px;
+	width:52px;
+	inline-block:inline;
+	margin-top:100px;
+	border-style:solid;
+	border-color:purple;
+	border: 0px 0px 0px 100px;
+	padding:230px 0px 0px 0px;
+	
 }
